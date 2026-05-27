@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Boundary Monitor v3 — .gitignore
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Environment & secrets — NEVER commit these
+.env
+*.key
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# YOLO model weights (large binary files — download on first run)
+*.onnx
+*.pt
+*.weights
+
+# Recorded outputs
+boundary_output_*.mp4
+*.mp4
+*.avi
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
